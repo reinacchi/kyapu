@@ -10,7 +10,7 @@ function getBackgroundNoise(
 ): string {
     const noiseDots = [];
     const dotRadius = 0.5;
-    const dotColor = "black";
+    const dotColor = greyColour();
 
     for (let i = 0; i < density; i++) {
         const x = Math.random() * width;
@@ -75,7 +75,7 @@ function getText(
         const charPath = chToPath(text[i], Object.assign({ x, y }, options));
 
         const colour1 = options.colour
-            ? greyColour(min, max)
+            ? randomColour()
             : greyColour(min, max);
 
         out.push(`<path fill="${colour1}" d="${charPath}"/>`);

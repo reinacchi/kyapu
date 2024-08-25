@@ -1,6 +1,6 @@
 {
   "name": "kyapu",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Node wrapper to generate SVG captcha",
   "main": "src/index.js",
   "scripts": {

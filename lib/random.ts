@@ -9,7 +9,7 @@ export function stripCharsFromString(string: string, chars: string) {
     return string.split("").filter((char) => chars.indexOf(char) === -1);
 }
 
-export function greyColour(min: number, max: number) {
+export function greyColour(min?: number, max?: number) {
     min = min || 1;
     max = max || 9;
 
